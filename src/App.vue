@@ -1,15 +1,21 @@
 <template>
-  <div>
-    <h1>Hello Vue 2 with Vite!</h1>
-  </div>
+  <a-config-provider locale="zhCN">
+    <div id="app">
+      <router-view></router-view>
+    </div>
+  </a-config-provider>
 </template>
 
 <script>
+
 export default {
   name: 'App',
-};
-</script>
+  data() {
+    return {}
+  },
 
-<style>
-/* 添加样式 */
+}
+</script>
+<style lang="less">
+
 </style>
