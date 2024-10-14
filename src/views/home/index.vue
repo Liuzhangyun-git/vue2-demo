@@ -1,5 +1,6 @@
 <template>
   <div class="home-container">
+  <h1>我真是大可爱</h1>
     <div class="card">
       <div class="item" @click="toPage(item.routeName)" v-for="(item, index) in list" :key="index">
         <div class="title">
