@@ -1,10 +1,14 @@
 <template>
   <div class="home-container">
-  <h1>我真是大可爱</h1>
     <div class="card">
-      <div class="item" @click="toPage(item.routeName)" v-for="(item, index) in list" :key="index">
+      <div
+        class="item"
+        @click="toPage(item.routeName)"
+        v-for="(item, index) in list"
+        :key="index"
+      >
         <div class="title">
-          <img :src="item.img" alt="">
+          <img :src="item.img" alt="" />
           <span>{{ item.name }}</span>
         </div>
         <div class="desc">{{ item.desc }}</div>
@@ -14,62 +18,59 @@
 </template>
 
 <script>
-import img1 from '@/assets/home/医院.png';
-import img2 from '@/assets/home/病历.png';
-import img3 from '@/assets/home/检查.png';
-import img4 from '@/assets/home/质控.png';
-import img5 from '@/assets/home/设备效益.png';
-import img6 from '@/assets/home/预警.png';
-import img7 from '@/assets/home/知识库.png';
-import img8 from '@/assets/home/考核.png';
-import img9 from '@/assets/home/添加.png';
+import img1 from "@/assets/home/医院.png";
+import img2 from "@/assets/home/病历.png";
+import img3 from "@/assets/home/检查.png";
+import img4 from "@/assets/home/质控.png";
+import img5 from "@/assets/home/设备效益.png";
+import img6 from "@/assets/home/预警.png";
+import img7 from "@/assets/home/知识库.png";
+import img8 from "@/assets/home/考核.png";
+import img9 from "@/assets/home/添加.png";
 
-import appImg1 from '@/assets/home/给药.png';
-import appImg2 from '@/assets/home/不良事件.png';
-import appImg3 from '@/assets/home/核心制度.png';
-import appImg4 from '@/assets/home/配置.png';
+import appImg1 from "@/assets/home/给药.png";
+import appImg2 from "@/assets/home/不良事件.png";
+import appImg3 from "@/assets/home/核心制度.png";
+import appImg4 from "@/assets/home/配置.png";
 
 export default {
-  name: 'Home',
+  name: "Home",
   data() {
     return {
       list: [
         {
-          name: '表格拖动排序',
-          desc: '基于 antd + vuedraggable',
+          name: "表格拖动排序",
+          desc: "基于 antd + vuedraggable",
           img: img1,
           show: true,
-          routeName: 'vue-draggable-table'
+          routeName: "vue-draggable-table",
         },
         {
-          name: 'css文字擦除效果',
-          desc: 'css 变量、可过度的自定义属性',
+          name: "css文字擦除效果",
+          desc: "css 变量、可过度的自定义属性",
           img: img2,
           show: true,
-          routeName: 'css-erase'
+          routeName: "css-erase",
         },
         {
-          name: '临时测试',
-          desc: '用于零时测试模块',
+          name: "临时测试",
+          desc: "用于零时测试模块",
           img: img3,
           show: true,
-          routeName: 'test'
+          routeName: "test",
         },
-
-      ]
-
-
+      ],
     };
   },
-  mounted() { },
+  mounted() {},
   methods: {
     toPage(name) {
       if (!name) {
-        this.$message.warning('开发中，敬请期待～');
+        this.$message.warning("开发中，敬请期待～");
         return;
       }
       this.$router.push({ name });
-    }
+    },
   },
 };
 </script>
@@ -94,7 +95,7 @@ export default {
 .home-container {
   padding: 90px 0 10px 30px;
   min-height: 100%;
-  background: url('@/assets/home/Group 323.png');
+  background: url("@/assets/home/Group 323.png");
   background-repeat: repeat-y;
   min-height: 100vh;
 
@@ -140,12 +141,12 @@ export default {
       margin-bottom: 20px;
 
       &::before {
-        content: '';
+        content: "";
         display: inline-block;
         width: 3px;
         height: 20px;
         vertical-align: text-bottom;
-        background-color: #50A1EB;
+        background-color: #50a1eb;
         margin-right: 10px;
       }
     }
