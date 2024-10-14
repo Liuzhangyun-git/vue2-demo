@@ -38,12 +38,19 @@ export default {
           desc: '基于 antd + vuedraggable',
           img: img1,
           show: true,
-          routeName: 'draggableTable'
+          routeName: 'vue-draggable-table'
+        },
+        {
+          name: 'css文字擦除效果',
+          desc: 'css 变量、可过度的自定义属性',
+          img: img2,
+          show: true,
+          routeName: 'css-erase'
         },
         {
           name: '临时测试',
           desc: '用于零时测试模块',
-          img: img2,
+          img: img3,
           show: true,
           routeName: 'test'
         },

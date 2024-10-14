@@ -5,9 +5,14 @@ export default [
     component: () => import("../views/home/index.vue"),
   },
   {
-    path: "/draggable-table",
-    name: "draggableTable",
-    component: () => import("../views/draggableTable/test.vue"),
+    path: "/vue-draggable-table",
+    name: "vue-draggable-table",
+    component: () => import("../views/vue/draggable-table/test.vue"),
+  },
+  {
+    path: "/css-erase",
+    name: "css-erase",
+    component: () => import("../views/css/erase/test.vue"),
   },
   {
     path: "/test",
