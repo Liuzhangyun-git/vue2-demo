@@ -57,7 +57,7 @@ export default {
           desc: "基于 antd + FullCalendar",
           img: img4,
           show: true,
-          routeName: "as-calendar-v2",
+          routeName: "as-calendar",
         },
         {
           name: "临时测试",
