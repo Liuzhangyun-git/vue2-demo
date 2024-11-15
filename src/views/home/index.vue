@@ -53,6 +53,13 @@ export default {
           routeName: "css-erase",
         },
         {
+          name: "日程组件",
+          desc: "基于 antd + FullCalendar",
+          img: img4,
+          show: true,
+          routeName: "as-calendar-v2",
+        },
+        {
           name: "临时测试",
           desc: "用于零时测试模块",
           img: img3,

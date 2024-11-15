@@ -15,6 +15,11 @@ export default [
     component: () => import("../views/css/erase/test.vue"),
   },
   {
+    path: "/as-calendar-v2",
+    name: "as-calendar-v2",
+    component: () => import("../views/vue/as-calendar/test.vue"),
+  },
+  {
     path: "/test",
     name: "test",
     component: () => import("../views/test/index.vue"),

@@ -1,24 +1,22 @@
 <template>
-  <a-config-provider :locale="locale">
-    <div id="app">
+  <div id="app">
+    <a-config-provider :locale="locale">
       <router-view></router-view>
-    </div>
-  </a-config-provider>
+    </a-config-provider>
+  </div>
 </template>
 
 <script>
-import zhCN from 'ant-design-vue/es/locale/zh_CN'; // 中文
-import enUS from 'ant-design-vue/es/locale/en_US'; // 英文
+import ZHCN from 'ant-design-vue/lib/locale-provider/zh_CN';
+
 export default {
   name: 'App',
   data() {
     return {
-      locale:zhCN
+      locale: ZHCN
     }
   },
 
 }
 </script>
-<style lang="less">
-
-</style>
+<style lang="less"></style>
