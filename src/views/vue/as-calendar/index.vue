@@ -79,10 +79,16 @@ export default {
             noEventsText: '该月暂无事件',
           }
         },
+        moreLinkText: '更多', 
+        dayMaxEvents: false, // 每天显示最多事件数 其余的显示在更多
         eventTimeFormat: { // 在每个事件上显示的时间的格式
           hour: '2-digit',
           minute: '2-digit',
-          hour12: false
+          hourCycle: 'h23',
+        },
+        slotLabelContent: function ({date}) {
+          let hour = date.getHours();  
+          return `${hour}时`; 
         },
         initialView: 'dayGridMonth',
         initialEvents: [],
@@ -91,7 +97,6 @@ export default {
         editable: true,
         selectable: true,
         selectMirror: true,
-        dayMaxEvents: true,
         weekends: true,
         select: this.handleDateSelect,
         eventClick: this.handleEventClick,
